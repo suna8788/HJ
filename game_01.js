@@ -17,24 +17,24 @@ var Library = {
     topBox.path('M1 40 L359 40 L359 0 Q358 1 358 1 L1 1').attr({
       'fill': '#d3e7b9'
     });
-    topBox.rect(11, 6, 32, 28).click(handlerBon).attr({
-      'fill': '#d3e7b9',
-      'cursor': 'pointer'
-    });
+    // topBox.rect(11, 6, 32, 28).click(handlerBon).attr({
+    //   'fill': '#d3e7b9',
+    //   'cursor': 'pointer'
+    // });
     topBox.text(280, 27, '가 활용01').attr({
       'font-size': 18
     });
 
     for (var i = 0; i < 3; i++) {
-      topBox.line(15, 13 + (i * 8), 40, 13 + (i * 8)).click(handlerBon).attr({
+      topBox.line(15, 13 + (i * 8), 40, 13 + (i * 8)).attr({
         'stroke': 'black',
         'cursor': 'pointer'
       });
     }
 
-    function handlerBon() {
-      location.replace('bon_03.html');
-    }
+    // function handlerBon() {
+    //   location.replace('bon_03.html');
+    // }
   },
 
   //////////////////////////////////////////////////////////////////////////////////////////////
