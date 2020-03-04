@@ -20,10 +20,10 @@ var topBox = Paper.g();
 topBox.path('M1 40 L359 40 L359 0 Q358 1 358 1 L1 1').attr({
     'fill': '#d3e7b9'
 });
-topBox.rect(11, 6, 32, 28).click(handlerBon).attr({
-  'fill': '#d3e7b9',
-  'cursor': 'pointer'
-});
+// topBox.rect(11, 6, 32, 28).click(handlerBon).attr({
+//   'fill': '#d3e7b9',
+//   'cursor': 'pointer'
+// });
 topBox.text(280, 27, '가 활용04').attr({
   'font-size': 18
 });

@@ -20,10 +20,10 @@ var topBox = Paper.g();
 topBox.path('M1 40 L359 40 L359 0 Q358 1 358 1 L1 1').attr({
     'fill': '#d3e7b9'
 });
-topBox.rect(11, 6, 32, 28).click(handlerBon).attr({
-  'fill': '#d3e7b9',
-  'cursor': 'pointer'
-});
+// topBox.rect(11, 6, 32, 28).click(handlerBon).attr({
+//   'fill': '#d3e7b9',
+//   'cursor': 'pointer'
+// });
 topBox.text(280, 27, '가 활용05').attr({
   'font-size': 18
 });
@@ -51,7 +51,7 @@ cardArea.rect(8, 60, 345, 270).attr({
     'fill': '#c3d8d8',
     'opacity': 0.7
 });
-cardArea.text(43, 140, '가07').attr({
+cardArea.text(43, 140, '가09').attr({
     'font-family': 'Sans-Serif',
     'font-size': 25,
     'fill': '#223C6F',
@@ -62,7 +62,7 @@ cardArea.rect(8, 340, 345, 270).attr({
     'fill': '#c3d8d8',
     'opacity': 0.7
 });
-cardArea.text(43, 420, '가08').attr({
+cardArea.text(43, 420, '가10').attr({
     'font-family': 'Sans-Serif',
     'font-size': 25,
     'fill': '#223C6F',
