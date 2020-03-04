@@ -49,7 +49,7 @@ var HT003 = {
       'rx': 8,
       'ry': 8
     });
-    var redBT = reportG.text(80, 430, '재도전').attr({
+    var redBT = reportG.text(57, 430, '카드 다시 보기!').attr({
       'fill': 'white',
       'font-size': 13
     });
@@ -61,7 +61,7 @@ var HT003 = {
       'rx': 8,
       'ry': 8
     });
-    var orangeBT = reportG.text(240, 430, '다음으로').attr({
+    var orangeBT = reportG.text(240, 430, '재도전!').attr({
       'fill': 'white',
       'font-size': 13
     });
@@ -70,11 +70,11 @@ var HT003 = {
     });
 
     function handler01() {
-      location.reload();
+      location.replace('card_03.html');
     }
 
     function handler02() {
-      location.replace('hwal_05.html');
+      location.reload();
     }
   },
 
