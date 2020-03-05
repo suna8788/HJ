@@ -44,8 +44,8 @@ for (var i = 0; i < 3; i++) {
 var cardArea = Paper.g();
 var hanjas1 = ['口', '目', '日', '月'];
 var means1 = ['입 구', '눈 목', '날 일', '달 월'];
-var hanjas2 = ['耳', '手', '力', '火', '水', '木'];
-var means2 = ['귀 이', '손 수', '힘 력', '불 화', '물 수', '나무 목'];
+var hanjas2 = ['耳', '水', '力', '火', '手', '木'];
+var means2 = ['귀 이', '물 수', '힘 력', '불 화', '손 수', '나무 목'];
 
 cardArea.rect(8, 60, 345, 270).attr({
     'fill': '#c3d8d8',
