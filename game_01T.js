@@ -74,7 +74,7 @@ var HT001 = {
     }
 
     function handler02() {
-      location.replace('last.html');
+      location.replace('last_01.html');
     }
   },
 
