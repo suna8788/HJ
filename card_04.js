@@ -51,14 +51,14 @@ cardArea.rect(8, 50, 345, 270).attr({
     'fill': '#c3d8d8',
     'opacity': 0.7
 });
-cardArea.text(43, 140, '가07').attr({
+cardArea.text(43, 130, '가07').attr({
     'font-family': 'Sans-Serif',
     'font-size': 25,
     'fill': '#223C6F',
     'font-weight': 'bold'
 });
 
-cardArea.rect(8, 340, 345, 270).attr({
+cardArea.rect(8, 330, 345, 270).attr({
     'fill': '#c3d8d8',
     'opacity': 0.7
 });
