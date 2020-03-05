@@ -49,7 +49,7 @@ var HT001 = {
       'rx': 8,
       'ry': 8
     });
-    var redBT = reportG.text(57, 430, '재도전').attr({
+    var redBT = reportG.text(78, 430, '재도전').attr({
       'fill': 'white',
       'font-size': 13
     });
@@ -61,7 +61,7 @@ var HT001 = {
       'rx': 8,
       'ry': 8
     });
-    var orangeBT = reportG.text(240, 430, '끝내기').attr({
+    var orangeBT = reportG.text(245, 430, '끝내기').attr({
       'fill': 'white',
       'font-size': 13
     });
