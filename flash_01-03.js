@@ -589,7 +589,7 @@ setTimeout(function() {
         'rx': 8,
         'ry': 8
     });
-    var redBT = Paper.text(80, 430, '카드로').click(handler01).attr({
+    var redBT = Paper.text(75, 430, '처음으로').click(handler01).attr({
         'fill': 'white',
         'font-size': 13
     });
@@ -601,7 +601,7 @@ setTimeout(function() {
         'rx': 8,
         'ry': 8
     });
-    var orangeBT = Paper.text(240, 430, '게임으로').click(handler02).attr({
+    var orangeBT = Paper.text(250, 430, '게임').click(handler02).attr({
         'fill': 'white',
         'font-size': 13
     });
