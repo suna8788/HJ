@@ -117,13 +117,13 @@ var red = buttonArea.g(redB, redBT).click(handler01).attr({
   'cursor': 'pointer'
 });
 
-var orangeB = buttonArea.rect(260, 608, 85, 23).attr({
+var orangeB = buttonArea.rect(260, 608, 90, 25).attr({
   'fill': '#DAA520',
   'opacity' : 0.8,
   'rx': 8,
   'ry': 8
 });
-var orangeBT = buttonArea.text(274, 626, '게임 도전!').attr({
+var orangeBT = buttonArea.text(276, 626, '게임 도전!').attr({
   'fill': 'black',
   'font-size': 15
 });

@@ -108,29 +108,29 @@ for (var j = 0; j < 6; j++) {
 // 하단 버튼
 var buttonArea = Paper.g();
 
-var redB = buttonArea.rect(150, 610, 85, 23).attr({
+var redB = buttonArea.rect(150, 608, 90, 25).attr({
   'fill': '#E9967A',
   'opacity' : 0.8,
   'rx': 8,
   'ry': 8
 });
-var redBT = buttonArea.text(167, 626, '깜빡이 카드').attr({
+var redBT = buttonArea.text(163, 626, '깜빡이 카드').attr({
   'fill': 'black',
-  'font-size': 12
+  'font-size': 15
 });
 var red = buttonArea.g(redB, redBT).click(handler01).attr({
   'cursor': 'pointer'
 });
 
-var orangeB = buttonArea.rect(260, 610, 85, 23).attr({
+var orangeB = buttonArea.rect(260, 608, 90, 25).attr({
   'fill': '#DAA520',
   'opacity' : 0.8,
   'rx': 8,
   'ry': 8
 });
-var orangeBT = buttonArea.text(280, 626, '게임 도전!').attr({
+var orangeBT = buttonArea.text(276, 626, '게임 도전!').attr({
   'fill': 'black',
-  'font-size': 12
+  'font-size': 15
 });
 var orange = buttonArea.g(orangeB, orangeBT).click(handler02).attr({
   'cursor': 'pointer'
