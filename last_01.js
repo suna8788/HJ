@@ -32,5 +32,5 @@ var orange = Paper.g(orangeB, orangeBT).attr({
 });
 
 function handler01() {
-    location.replace('card_01.html');
+    location.replace('CAR001.html');
 }

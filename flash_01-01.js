@@ -1,11 +1,12 @@
-// 가등급 1~2세트 학습목표
+// 가등급 1~2세트 깜빡이카드(1)
 var SVG = Snap('#my-svg');
 
 // 최상위 그룹
 var Paper = SVG.g();
 
 //이미지
-var doctor = Paper.image('doctor.png', 0, 0, 130, 150).toDefs();
+var home = Paper.image('home.png', 0, 0, 30, 30).toDefs();
+var hoi01 = Paper.image('hoi01.png', 0, 0, 100, 100).toDefs();
 
 // SVG 외곽선
 Paper.rect(0, 0, 360, 640, 6).attr({
@@ -17,28 +18,20 @@ Paper.rect(0, 0, 360, 640, 6).attr({
 var topBox = Paper.g();
 
 topBox.path('M1 40 L359 40 L359 0 Q358 1 358 1 L1 1').attr({
-  'fill': '#d3e7b9'
+    'fill': '#f3b44d',
+    'opacity' : '0.4'
 });
 
-topBox.rect(11, 6, 32, 28).click(handler01).attr({
-  'fill': '#d3e7b9',
-  'cursor': 'pointer'
+home.use().transform('t12, 6').appendTo(topBox).click(handlerHome).attr({
+    'cursor' : 'pointer'
 });
-
-for (var i = 0; i < 3; i++) {
-  topBox.line(15, 13 + (i * 8), 40, 13 + (i * 8)).attr({
-    'stroke': 'black',
-    'cursor': 'pointer'
-  });
+function handlerHome() {
+  location.replace('CAR001.html');
 }
 
 topBox.text(280, 27, '가 활용01').attr({
   'font-size': 18
 });
-
-function handler01() {
-  location.replace('flash_01-01.html');
-}
 
 // 상단
 var hanjaArea = Paper.g();
@@ -51,7 +44,7 @@ hanjaArea.text(180, 260, '뜻음을 말해 보세요.').attr({
   'font-size': 40,
   'text-anchor': 'middle'
 });
-doctor.use().transform('t110, 310').appendTo(hanjaArea);
+hoi01.use().transform('t130, 320').appendTo(hanjaArea);
 
 
 setTimeout(function() {

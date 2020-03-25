@@ -1,10 +1,13 @@
+//가등급 1~2세트 깜빡이카드(3)
 var SVG = Snap('#my-svg');
 
 // 최상위 그룹
 var Paper = SVG.g();
 
 //이미지
-var couple = Paper.image('couple.png', 0, 0, 250, 160).toDefs();
+var home = Paper.image('home.png', 0, 0, 30, 30).toDefs();
+
+var hoi02 = Paper.image('hoi02.png', 0, 0, 120, 120).toDefs();
 
 // SVG 외곽선
 Paper.rect(0, 0, 360, 640, 6).attr({
@@ -16,28 +19,20 @@ Paper.rect(0, 0, 360, 640, 6).attr({
 var topBox = Paper.g();
 
 topBox.path('M1 40 L359 40 L359 0 Q358 1 358 1 L1 1').attr({
-    'fill': '#d3e7b9'
+    'fill': '#f3b44d',
+    'opacity' : '0.4'
 });
 
-topBox.rect(11, 6, 32, 28).click(handler01).attr({
-    'fill': '#d3e7b9',
-    'cursor': 'pointer'
+home.use().transform('t12, 6').appendTo(topBox).click(handlerHome).attr({
+    'cursor' : 'pointer'
 });
-
-for (var i = 0; i < 3; i++) {
-    topBox.line(15, 13 + (i * 8), 40, 13 + (i * 8)).attr({
-        'stroke': 'black',
-        'cursor': 'pointer'
-    });
+function handlerHome() {
+  location.replace('CAR001.html');
 }
 
 topBox.text(280, 27, '가 활용01').attr({
     'font-size': 18
 });
-
-function handler01() {
-    location.reload();
-}
 
 // 한자 카드 카운팅
 var progress = Paper.g();
@@ -583,7 +578,7 @@ setTimeout(function() {
 }, 38500);
 
 setTimeout(function() {
-    couple.use().transform('t60, 180').appendTo(Paper);
+    hoi02.use().transform('t120, 200').appendTo(Paper);
     var redB = Paper.rect(36, 410, 120, 30).attr({
         'fill': '#f8371f',
         'rx': 8,
@@ -610,7 +605,7 @@ setTimeout(function() {
     });
 
     function handler01() {
-        location.replace('card_01.html');
+        location.replace('CAR001.html');
     }
 
     function handler02() {

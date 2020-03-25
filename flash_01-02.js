@@ -1,9 +1,11 @@
-// 한능원 급수한자 8급 배정한자 표
+// 가등급 1~2세트 깜빡이카드(2)
 var SVG = Snap('#my-svg');
 
 // 최상위 그룹
 var Paper = SVG.g();
 
+//이미지
+var home = Paper.image('home.png', 0, 0, 30, 30).toDefs();
 
 // SVG 외곽선
 Paper.rect(0, 0, 360, 640, 6).attr({
@@ -15,28 +17,20 @@ Paper.rect(0, 0, 360, 640, 6).attr({
 var topBox = Paper.g();
 
 topBox.path('M1 40 L359 40 L359 0 Q358 1 358 1 L1 1').attr({
-  'fill': '#d3e7b9'
+    'fill': '#f3b44d',
+    'opacity' : '0.4'
 });
 
-// topBox.rect(11, 6, 32, 28).click(handler01).attr({
-//   'fill': 'Wheat',
-//   'cursor': 'pointer'
-// });
-
-for (var i = 0; i < 3; i++) {
-  topBox.line(15, 13 + (i * 8), 40, 13 + (i * 8)).attr({
-    'stroke': 'black',
-    'cursor': 'pointer'
-  });
+home.use().transform('t12, 6').appendTo(topBox).click(handlerHome).attr({
+    'cursor' : 'pointer'
+});
+function handlerHome() {
+  location.replace('CAR001.html');
 }
 
 topBox.text(280, 27, '가 활용01').attr({
   'font-size': 18
 });
-
-// function handler01() {
-//   location.replace('gub_01.html');
-// }
 
 // 상단
 var hanjaArea = Paper.g();

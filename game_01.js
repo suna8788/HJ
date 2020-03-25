@@ -1,7 +1,11 @@
+//가등급 1~2세트 게임
 var SVG = Snap('#my-svg');
 
 // 최상위 그룹
 var Paper = SVG.g();
+
+//이미지
+var home = Paper.image('home.png', 0, 0, 30, 30).toDefs();
 
 var Library = {
   //SVG 외곽선
@@ -11,30 +15,24 @@ var Library = {
       'fill': 'none'
     });
 
-    // 상단 박스
+    // 상단 바 부분
     var topBox = Paper.g();
 
     topBox.path('M1 40 L359 40 L359 0 Q358 1 358 1 L1 1').attr({
-      'fill': '#d3e7b9'
+        'fill': '#f3b44d',
+        'opacity' : '0.4'
     });
-    // topBox.rect(11, 6, 32, 28).click(handlerBon).attr({
-    //   'fill': '#d3e7b9',
-    //   'cursor': 'pointer'
-    // });
+
+    home.use().transform('t12, 6').appendTo(topBox).click(handlerHome).attr({
+        'cursor' : 'pointer'
+    });
+    function handlerHome() {
+      location.replace('CAR001.html');
+    }
+
     topBox.text(280, 27, '가 활용01').attr({
       'font-size': 18
     });
-
-    for (var i = 0; i < 3; i++) {
-      topBox.line(15, 13 + (i * 8), 40, 13 + (i * 8)).attr({
-        'stroke': 'black',
-        'cursor': 'pointer'
-      });
-    }
-
-    // function handlerBon() {
-    //   location.replace('bon_03.html');
-    // }
   },
 
   //////////////////////////////////////////////////////////////////////////////////////////////
@@ -93,7 +91,7 @@ var Library = {
       });
       questions[j].rect(20 + (j % 3) * 110, 85 + (j % 4) * 110, 100, 100, 6, 6).attr({
         'fill': 'white',
-        'stroke': '#ffd136',
+        'stroke': '#afdc55',
         'stroke-width': 1.5
       });
       var isTooShort = gameEl[j].text.length < 2;
@@ -119,7 +117,7 @@ var Library = {
       'fill': '#b4b4dc',
       'mask': maskBar
     });
-    paper.image('../img/clock.png', 32, 578, 17, 17);
+    paper.image('clock.png', 32, 578, 17, 17);
 
     return questions;
 
@@ -142,7 +140,8 @@ var Library = {
         'pointer-events': 'none'
       });
       this.select('rect').attr({
-        'fill': 'LemonChiffon'
+          'fill': '#afdc55',
+          'opacity' : '0.3'
       });
 
       pair.push(this.data('i'));

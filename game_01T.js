@@ -43,7 +43,7 @@ var HT001 = {
       'font-wieght': 'bold',
       'text-anchor': 'middle'
     });
-    reportG.image('report02.png', 110, 220, 140, 160);
+    reportG.image('hoi03.png', 130, 225, 100, 120);
     var redB = reportG.rect(36, 410, 120, 30).attr({
       'fill': '#f8371f',
       'rx': 8,
