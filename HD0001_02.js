@@ -81,7 +81,7 @@ var t1 = bottomArea.text(55, 230, ['你看了那本书', '没有', '？']).click
 });
 
 t1.selectAll('tspan')[1].attr({
-    x: 208,
+    // x: 210,
     'fill': 'red'
 });
 
@@ -142,7 +142,7 @@ var t3 = bottomArea.text(55, 430, ['我', '没有', '买东西。']).click(handl
 });
 
 t3.selectAll('tspan')[1].attr({
-    x: 80,
+    // x: 80,
     'fill': 'red'
 });
 
@@ -173,12 +173,12 @@ var t4 = bottomArea.text(55, 530, ['他', '还没', '回来', '呢', '。']).cli
 });
 
 t4.selectAll('tspan')[1].attr({
-    x: 80,
+    // x: 80,
     'fill': 'red'
 });
 
 t4.selectAll('tspan')[3].attr({
-    x: 188,
+    // x: 188,
     'fill': 'red'
 });
 
