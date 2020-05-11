@@ -75,29 +75,22 @@ bottomArea.text(23, 225, '1').attr({
     'font-weight': 'bold'
 });
 
-bottomArea.text(55, 230, '我来了。').click(handler01).attr({
+var t1 = bottomArea.text(55, 230, ['我来', '了', '。']).click(handler01).attr({
     'font-size': 28,
     'cursor': 'pointer',
 });
 
+t1.selectAll('tspan')[1].attr({
+    x: 107,
+    'fill': 'red'
+});
+
 bottomArea.text(55, 265, '저 왔습니다.').attr({
     'font-size': 18,
-    'fill':'gray'
+    'fill': 'gray'
 });
 
 function handler01() {
-    bottomArea.text(107, 230, '了').click(handler02).attr({
-        'font-size': 28,
-        'fill':'red',
-        'font-weight':'bold',
-        'cursor': 'pointer',
-    });
-
-    var audio1 = new Audio('aud/gram01.mp3');
-    audio1.play();
-}
-
-function handler02() {
     var audio1 = new Audio('aud/gram01.mp3');
     audio1.play();
 }
@@ -113,30 +106,23 @@ bottomArea.text(23, 325, '2').attr({
     'font-weight': 'bold'
 });
 
-bottomArea.text(55, 330, '他回来了吗?').click(handler03).attr({
+var t2 = bottomArea.text(55, 330, ['他回来', '了', '吗?']).click(handler02).attr({
     'font-size': 28,
     'cursor': 'pointer',
 });
 
+t2.selectAll('tspan')[1].attr({
+    x: 130,
+    'fill': 'red'
+});
+
 bottomArea.text(55, 365, '그는 돌아왔습니까?').attr({
     'font-size': 18,
-    'fill':'gray'
+    'fill': 'gray'
 });
 
 
-function handler03() {
-    bottomArea.text(132, 330, '了').click(handler04).attr({
-        'font-size': 28,
-        'fill':'red',
-        'font-weight':'bold',
-        'cursor': 'pointer',
-    });
-
-    var audio2 = new Audio('aud/gram02.mp3');
-    audio2.play();
-}
-
-function handler04() {
+function handler02() {
     var audio2 = new Audio('aud/gram02.mp3');
     audio2.play();
 }
@@ -152,30 +138,22 @@ bottomArea.text(23, 425, '3').attr({
     'font-weight': 'bold'
 });
 
-bottomArea.text(55, 430, '你买了什么?').click(handler05).attr({
+var t3 = bottomArea.text(55, 430, ['你买', '了','什么?']).click(handler03).attr({
     'font-size': 28,
     'cursor': 'pointer',
 });
 
-bottomArea.text(55, 465, '당신은 무엇을 샀습니까?').attr({
-    'font-size': 18,
-    'fill':'gray'
+t3.selectAll('tspan')[1].attr({
+    x: 112,
+    'fill': 'red'
 });
 
+bottomArea.text(55, 465, '당신은 무엇을 샀습니까?').attr({
+    'font-size': 18,
+    'fill': 'gray'
+});
 
-function handler05() {
-    bottomArea.text(112, 430, '了').click(handler06).attr({
-        'font-size': 28,
-        'fill':'red',
-        'font-weight':'bold',
-        'cursor': 'pointer',
-    });
-
-    var audio3 = new Audio('aud/gram03.mp3');
-    audio3.play();
-}
-
-function handler06() {
+function handler03() {
     var audio3 = new Audio('aud/gram03.mp3');
     audio3.play();
 }
@@ -191,31 +169,23 @@ bottomArea.text(22, 526, '4').attr({
     'font-weight': 'bold'
 });
 
-bottomArea.text(55, 530, '我买了一双运动鞋。').click(handler07).attr({
+var t4 = bottomArea.text(55, 530, ['我买','了','一双运动鞋。']).click(handler04).attr({
     'font-size': 28,
     'cursor': 'pointer',
 });
 
+t4.selectAll('tspan')[1].attr({
+    x: 108,
+    'fill': 'red'
+});
+
 bottomArea.text(55, 565, '나는 운동화를 한 켤레 샀습니다.').attr({
     'font-size': 18,
-    // 'font-family':'NanumGothic',
-    'fill':'gray'
+    'fill': 'gray'
 });
 
 
-function handler07() {
-    bottomArea.text(108, 530, '了').click(handler08).attr({
-        'font-size': 28,
-        'fill':'red',
-        'font-weight':'bold',
-        'cursor': 'pointer',
-    });
-
-    var audio4 = new Audio('aud/gram04.mp3');
-    audio4.play();
-}
-
-function handler08() {
+function handler04() {
     var audio4 = new Audio('aud/gram04.mp3');
     audio4.play();
 }
